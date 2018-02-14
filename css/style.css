@@ -35,7 +35,7 @@ a:hover, a.active {
 
 a.active {
   border-left: solid 2px #467cb3;
-  padding-left: 3px;
+  padding-left: 4px;
 }
 
 ul {
@@ -71,6 +71,7 @@ a.normal {
 a.back {
   font-size: 1rem;
   color: #164c83;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 nav {
