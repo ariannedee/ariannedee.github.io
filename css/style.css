@@ -19,6 +19,12 @@ h2 {
   font-size: 1.3rem;
 }
 
+p.highlight {
+  margin: 40px 0;
+  padding-left: 10px;
+  border-left: solid 2px #467cb3;
+}
+
 a {
   color: #164c83;
   text-decoration: none;
@@ -47,7 +53,7 @@ header {
   display: block;
   position: fixed;
   right: 0;
-  top: 40px;
+  top: 25px;
   background-color: #B1CC74;
   padding: 10px 20px;
 }
@@ -69,8 +75,8 @@ a.normal {
 }
 
 a.back {
-  font-size: 1rem;
-  color: #164c83;
+  font-size: 0.9rem;
+  font-weight: 700;
   font-family: 'Julius Sans One', sans-serif;
 }
 
