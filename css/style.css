@@ -1,45 +1,76 @@
 html {
-  font-size: 16px;
+  font-size: 20px;
   padding: 0;
-}
-
-header {
-  font-family: 'Abel', sans-serif;
-  background: url("../images/dynjandi.jpeg") fixed no-repeat;
-  background-size: 100%;
+  font-family: 'Crimson Text', serif;
 }
 
 body {
-  background-color: #D0F4EA;
+  /*background-color: #D0F4EA;*/
   padding: 0;
   margin: 0;
 }
 
 h1 {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   color: #545F66;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
-p {
-  font-size: 1.5rem;
+a {
+  color: #164c83;
+  text-decoration: none;
+}
+
+a.filter {
+  padding-left: 5px;
+  color: #545F66;
+}
+
+a:hover, a.active {
+  color: #467cb3;
+}
+
+a.active {
+  border-left: solid 2px #467cb3;
+  padding-left: 3px;
+}
+
+ul {
+  margin: 0;
 }
 
 header {
-  height: 25vw;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
+  font-family: 'Julius Sans One', sans-serif;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 40px;
+  background-color: #B1CC74;
+  padding: 10px 20px;
 }
 
 header h1 {
-  background-color: #B1CC74;
-  padding: 10px;
-  height: 47px;
+  margin: 0;
+  padding: 0;
+}
+
+header h2 {
+  margin: 10px 10px 10px 0;
+  padding: 0;
+  width: 100%;
+}
+
+a.normal {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.back {
+  font-size: 1rem;
+  color: #164c83;
 }
 
 nav {
@@ -55,34 +86,68 @@ nav ul {
 }
 
 section {
-  background-color: #545F66;
   padding: 20px;
 }
 
-section.main div {
+section.main {
   width: 80%;
   margin: 0 auto;
 }
 
-img {
-  width: 100%;
+div.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-h1 .fa-hand-spock-o {
-  font-size: 1.5em;
+div.timeline img {
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
 }
 
-@media (max-width: 768px) {
-  header {
-    background-size: 768px;
-    height: 200px;
-  }
+div.timeline div.item {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0;
 }
 
-@media (max-width: 320px) {
-  header {
-    height: 150px;
-    background-size: 320px;
-  }
+div.item div.date {
+  min-width: 110px;
+  font-family: 'Julius Sans One', sans-serif;
+  border-right: black solid 2px;
+  margin-right: 20px;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
 
+div.item div.text {
+  min-width: 50%;
+  margin: 0 10px;
+}
+
+div.item div.image {
+}
+
+div.timeline p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+p.tags {
+  padding-top: 10px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+footer div {
+  padding: 15px 30px;
+  font-size: 0.95rem;
 }
