@@ -1,164 +1,121 @@
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>arianne</title>
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Abel|Noto+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header>
-    <div>
-      <h1>
-        <a href="index.html" class="normal">
-          arianne dee
-        </a>
-      </h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Arianne Dee</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700|Ubuntu+Mono:400,700|Raleway:400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a class="menu" onclick="show('about')">Arianne Dee
+        </a></h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a class="menu" onclick="show('maker')">maker</a></li>
+          <li><a class="menu" onclick="show('educator')"educator>tech educator</a></li>
+          <li><a class="menu" onclick="show('software')"software>software developer</a></li>
+        </ul>
+      </nav>
+      <section id="about">
+        <img src="images/profile.svg" alt="Profile image"/>
+        <h1>Hi, I'm</h1>
+        <h2>Arianne</h2>
+        <p>
+          From Vancouver, Canada, born and raised. I have filled my life with lots of hobbies, and I do some of them to make money. 
+        </p>
+        <p>
+          If you want to know more about what I could help you with, check out my projects.
+        </p>
+      </section>
+      <section id="maker" class="content">
+        <div class="list">
+          <h1>maker</h1>
+          <ul>
+            <li>
+              Woodworking
+            </li>
+            <li>
+              Sewing
+            </li>
+            <li>
+              Lasercutting
+            </li>
+            <li>
+              Painting
+            </li>
+            <li>
+              Jewellry
+            </li>
+          </ul>        
+        </div>
+        <div class="detail">
+          <img src="images/side_table.jpg" />
+          <img src="images/table.jpg" />
+          <img src="images/dress1.jpg" />
+          <img src="images/tent_dress.jpg" />
+          <img src="images/coasters.jpg" />
+          <img src="images/paper_cutout1.jpg" />
+          <img src="images/watercolour_2.jpg" />
+          <img src="images/helmet.jpg" />
+          <img src="images/terrarium_necklaces.jpg" />
+        </div>
+      </section>
+      <section id="educator" class="content">
+        <div class="list">
+          <h1>tech educator</h1>
+          <ul>
+            <li>
+              Scratch
+            </li>
+            <li>
+              Python
+            </li>
+            <li>
+              GraphQL
+            </li>
+            <li>
+              HTML & CSS
+            </li>
+          </ul>        
+        </div>
+        <div class="detail">
+          <img src="images/glc.png" />
+        </div>
+      </section>
+      <section id="software" class="content">
+        <div class="list">
+          <h1>software developer</h1>
+          <ul>
+            <li>
+              Full-stack
+            </li>
+            <li>
+              Django
+            </li>
+            <li>
+              React
+            </li>
+            <li>
+              HTML & CSS
+            </li>
+          </ul>        
+        </div>
+        <div class="detail">
+          <img src="images/djangocon_square.jpeg" />
+        </div>
+      </section>
+      <footer id="contact">
+        Contact me through 
+        <span>
+          <a href="mailto:ariannedee@gmail.com">ariannedee@gmail.com</a> | <a href="">LinkedIn</a>
+        </span>
+      </footer>
     </div>
-  </header>
-  <section class="main">
-    <div>
-      <h2>Who am I?</h2>
-      <p>
-        My name is Arianne and I'm applying for the Makerlabs residency.
-      </p>
-      <p class="highlight">
-        You can check out my <strong><a href='cv.html'>maker experience</a></strong> or see <strong><a href="https://www.linkedin.com/in/arianne-dee-22290780">my CV on LinkedIn</a></strong>.
-      </p>
-
-      <p>
-        I have been a crafter since I was a child.
-        At summer camp, you could find me 
-        making bracelets and dream catchers with the councillors
-        rather than playing with the other kids.
-      </p>
-      <p>
-        In university I studied Civil Engineering,
-        and too late into the degree did I realize that 
-        they didn't actually get to build anything. 
-        I would have to become a construction worker for that.
-        Not even the mini architectural models? 
-        No, you don't make those either.
-      </p>
-      <p>
-        Fast forward ten years, and I am working as a software developer.
-        Even though I don't love computers,
-        I enjoy the problem solving and the 
-        the ease of creating something from nothing.
-        But I can't shake the feeling that there's something missing
-        when you can't touch what you've built.
-        It's all just ones and zeroes.
-      </p>
-      <h2>Why do I want to do a residency at MakerLabs?</h2>
-      <p>
-        Because I am at a cross-roads in my career.
-        I have always loved making things and have been struggling for years
-        to find the time to do it.
-        Now I want to see if I can make it more than just a hobby.
-      </p>
-      <p>
-        Having spent the last four years as a software developer,
-        working for other people, I am ready for a change.
-        <ul>
-          <li>
-            I want to not sit at a desk all day
-          </li>
-          <li>
-            I want to work directly with the people that I am building things for
-          </li>
-          <li>
-            I want to work with more women
-          </li>
-        </ul>
-      </p>
-      <p>
-        Before hearing about this residency,
-        I had already committed to leaving my job
-        and trying to make a go of it on my own, with the assortment 
-        of skills I have acquired so far in life.
-        Programming, teaching, sewing, and woodworking were the primary candidates.
-      </p>
-      <p>
-        While I know that I can code and teach for money,
-        this residency would allow me to see if I can turn
-        what I love as a hobby into a career 
-        (or at least pay for itself + ramen).
-      </p>
-      <p>
-        Last Thursday was my last day of work and I'll
-        be dedicating the next 6 months to self-employment.
-        I would love the Makerlabs community,
-        to be a part of it.
-      </p>
-      <p>
-        What I would like to get out of the residency:
-        <ul>
-          <li>
-            Dedicated time and space to pursue a maker career
-          </li>
-          <li>
-            A collaborative environment with other women
-          </li>
-          <li>
-            Mentorship, words of encouragement, and feedback
-          </li>
-        </ul>
-      </p>
-      <p>
-        What I have to offer:
-        <ul>
-          <li>
-            Good at brainstorming and coming up with creative solutions
-          </li>
-          <li>
-            Positive attitude, and am not afraid to try things or make mistakes
-          </li>
-          <li>
-            Can help others with coding (Python or HTML/CSS/Javascript), laser cutting, sewing, and woodworking
-          </li>
-        </ul>
-      </p>
-      <p>
-        What I want to learn:
-        <ul>
-          <li>
-            Welding & metalworking
-          </li>
-          <li>
-            Using the CNC router
-          </li>
-          <li>
-            Lots more woodworking skills and practise, including the lathe
-          </li>
-          <li>
-            Time and project management skills
-          </li>
-        </ul>
-      </p>
-      <p>
-	Other tools I would be using:
-	<ul>
-	  <li>
-	    Woodshop tools: jointer/planer, table saw, mitre saw
-	  </li>
-	  <li>
-	    Laser cutter
-	  </li>
-	  <li>
-	    Serger, if there is one
-	  </li>
-	</ul>
-      </p>
-      <br />
-      <p>
-        Check out my <a href='cv.html'>maker experience</a>.
-      </p>
-      <p>
-        See my CV on <a href="https://www.linkedin.com/in/arianne-dee-22290780">LinkedIn</a>.
-      </p>
-      <br />
-    </div>
-  </section>
-</body>
+  </body>
 </html>
