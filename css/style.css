@@ -181,6 +181,7 @@ nav a {
   padding: 3px 10px;
   color: inherit;
   align-self: center;
+  cursor: pointer;
 }
 
 nav a:hover {
