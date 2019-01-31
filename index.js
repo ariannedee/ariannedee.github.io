@@ -1,19 +1,13 @@
-var show = function(id) {
-  $("section").not('#' + id).hide();
-  $("section#" + id).show();
-  
-  if (id === "about") {
-    $("footer").hide();
-  } else {
-    $("footer").show();
-  }
-}
+// var show = function(id) {
+//   $("section").not('#' + id).hide();
+//   $("section#" + id).show();
+// }
 
-$(document).ready(function(){
-    $("a.menu").click(function(e){
-      e.preventDefault();
-      return false;
-    });
+// $(document).ready(function(){
+//     $("a.menu").click(function(e){
+//       e.preventDefault();
+//       return false;
+//     });
     
-    show("about");
-});
+//     show("about");
+// });

@@ -42,9 +42,9 @@ footer span {
 /* TYPEOGRAPHY */
 
 html {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
+  font-family: 'Helvetica Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 header h1 {
@@ -53,7 +53,7 @@ header h1 {
 
 h1, h2, h3 {
   font-weight: normal;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 h2 {
@@ -69,7 +69,12 @@ a:hover {
 }
 
 nav {
-  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+}
+
+footer {
+  font-size: 0.8rem;
 }
 
 /* COLOURS */
@@ -160,17 +165,17 @@ nav li:nth-child(3) {
 }
 
 
-nav li:nth-child(1) a:hover {
+nav li:nth-child(1) a:hover, nav li:nth-child(1) a.active {
   background: #5ABC9D;
   color: white;
 }
 
-nav li:nth-child(2) a:hover {
+nav li:nth-child(2) a:hover, nav li:nth-child(2) a.active {
   background: #51827A;
   color: white;
 }
 
-nav li:nth-child(3) a:hover {
+nav li:nth-child(3) a:hover, nav li:nth-child(3) a.active {
   background: #3B413C;
   color: white;
 }
@@ -189,8 +194,10 @@ nav a:hover {
 }
 
 header a:hover {
-  text-decoration: underline;
+  color: #51827A;
+  text-decoration: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 nav a.active {
@@ -198,37 +205,36 @@ nav a.active {
 }
 
 footer {
-  display: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* HOME */
 section#about img {
-  width: 200px;
+  width: 160px;
   border: 4px solid #b6bcb7;
   border-radius: 50%;
+  opacity: 0.7;
 }
 
 section#about h1 {
   z-index: 10;
-  margin: -180px 0 0 207px;
-  font-size: 2.5em;
+  margin: -170px 0 0 190px;
+  font-size: 2.2em;
 }
 
 section#about h2 {
-  margin: 0 0 0 215px;
-  font-size: 2.5em;
+  margin: 0 0 0 200px;
+  font-size: 2.2em;
 }
 
 section#about h2 + p {
   margin-top: 80px;
 }
 
-section {
-  display: none;
-}
-
-section#about {
-  display: block;
+section#software a.example {
+  font-size: 0.9rem;
+  color: #5ABC9D;
 }
 
 div.content {
@@ -237,8 +243,8 @@ div.content {
 }
 
 div.content img {
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  height: 220px;
   display: block;
   border-radius: 10px;
   margin-right: 10px;
@@ -259,10 +265,6 @@ div.content div.image-carousel {
   background: #DDDDDDAA;
   border: #DDDDDD 2px solid;
   padding: 10px;
-}
-
-section#maker, section#software {
-  /* background: #72612F55; */
 }
 
 @media screen and (max-width: 500px) {
@@ -304,9 +306,19 @@ section#maker, section#software {
   div.content div.detail, div.content div.list {
     width: 90%;
   }
+
   nav a {
     margin: 0;
     font-size: 1rem;
+  }
+
+  footer div {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  footer {
+    flex-wrap: wrap;
   }
 }
 
@@ -323,5 +335,14 @@ section#maker, section#software {
   section#about h2 + p {
     margin-left: 0;
     margin-top: 80px;
+  }
+
+  footer div {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  footer {
+    flex-wrap: wrap;
   }
 }
