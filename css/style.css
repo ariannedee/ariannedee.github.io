@@ -90,9 +90,8 @@ body {
 }
 
 header {
-  background: url(../images/black_thread.png) repeat;
-  /* border-bottom: 2px solid #94D1BE; */
-  border-bottom: 2px solid #B1EDE8;
+  background: url(../images/connectwork.png) repeat;
+  border-bottom: 2px solid #B1D5ED;
 }
 
 header a {
@@ -118,7 +117,7 @@ a {
 /* SPECIAL STYLES */
 
 .quote {
-  color: #72612F;
+  color: #3FB6D3;
   font-family: 'IBM Plex Sans', sans-serif;
   font-style: italic;
 }
@@ -163,11 +162,12 @@ nav li {
 }
 
 nav li {
-  color: #114B5F;
+  color: #3FB6D3;
 }
 
 nav li a:hover, nav li a.active {
-  background: #B1EDE8;
+  background: #3FB6D3;
+  color: white;
 }
 
 nav a {
@@ -184,7 +184,7 @@ nav a:hover {
 }
 
 header a:hover {
-  color: #B1EDE8;
+  color: #3FB6D3;
   text-decoration: none;
   background-color: inherit;
   cursor: pointer;
@@ -206,7 +206,7 @@ header img {
 
 section#software a.example {
   font-size: 0.9rem;
-  color: #5ABC9D;
+  color: #3FB6D3;
 }
 
 div.content {
@@ -234,8 +234,8 @@ div.content div.image-carousel {
   align-items: center;
   overflow-x: scroll;
   display: flex;
-  background: #DDDDDDAA;
-  border: #DDDDDD 2px solid;
+  background: #FFFCF9;
+  border: #B1E1ED 2px solid;
   padding: 10px;
 }
 
